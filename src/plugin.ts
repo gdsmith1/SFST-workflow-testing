@@ -5,8 +5,7 @@ import {
 } from '@backstage/core-plugin-api';
 
 import { rootRouteRef } from './routes';
-import { nonExistentModule } from './nonExistentFile';
-let x = nonExistentModule;
+
 
 export const sfstPlugin = createPlugin({
   id: 'sfst',
