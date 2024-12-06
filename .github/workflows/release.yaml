@@ -24,6 +24,7 @@ jobs:
         uses: actions/setup-node@v4.1.0
         with:
           node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: yarn install
@@ -62,6 +63,9 @@ jobs:
 
       - name: Fix any Backstage metadata
         run: yarn fix
+
+      - name: Debug package.json
+        run: cat package.json
 
       - name: Commit and push changes
         run: |
