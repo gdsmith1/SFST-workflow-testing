@@ -12,6 +12,7 @@
   },
   "repository": {
     "type": "git",
+    "url": "https://github.com/gdsmith1/SFST-workflow-testing",
     "directory": "."
   },
   "backstage": {
